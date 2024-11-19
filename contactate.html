@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/captcha.js"></script>
+    <link rel="stylesheet" href="css/estilos.css" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <title>Trabajo Practico Integrador WEB 1</title>
+</head>
+
+<body onload="escribirTextoAleatorio()">
+    <header>
+        <div class="caja_logo">
+            <img src="img/logo.png" alt="Logo de la empresa" class="logo">
+        </div>
+        <h1>NecoTech</h1>
+    </header>
+    <nav>
+        <input type="checkbox" id="check"/>
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul class="navegacion">
+            <a href="index.html">
+                <li class="menu">Inicio</li>
+            </a>
+            <a href="productos.html">
+                <li class="menu">Productos</li>
+            </a>
+            <a href="carrito.html"><li class="menu">Carrito</li></a>
+            <a href="contactate.html">
+                <li class="menu">Contactate</li>
+            </a>
+        </ul>
+    </nav>
+    <div class="contenidoContactate">
+        <div class="background-gris">
+            <h2>Para encargar productos rellene el siguiente formulario.</h2>
+            <form class="formulario">
+                <label>Ingrese su nombre:</label></br>
+                <input name="nombre" type="text"></br>
+                <label>Ingrese su email:</label></br>
+                <input name="email" type="email"></br>
+                <label>Detalle del pedido</label></br>
+                <textarea name="detalle" cols="50" rows="10"></textarea></br>
+                <label for="">Por favor complete el siguiente captcha</label></br>
+                <label id="captchaOrigen"></label>
+                <input type="text" id="captchaRespuesta">
+                <label id="resultado"></label></br>
+                <button type="button" onclick="validarCaptcha()">Enviar</button>
+            </form>
+        </div>
+        <div id="horarios" class="background-gris">
+            <h3>Zonas a las cuales encargar el producto:</h3>
+            <table>
+                <tr>
+                  <th>Zona</th>
+                  <th>Dirección</th>
+                  <th>Horarios</th>
+                </tr>
+                <tr>
+                  <td>Centro</td>
+                  <td>Esquina 61 y 62</td>
+                  <td>8:00 a 13:00 y 16:00 a 20:00</td>
+                </tr>
+                <tr>
+                  <td>Playa</td>
+                  <td>Esquina 8 y 81</td>
+                  <td>16:00 a 20:00</td>
+                </tr>
+                <tr>
+                    <td>Parque</td>
+                    <td>Esquina Av. 10 y Av. 91</td>
+                    <td>16:00 a 20:00</td>
+                  </tr>
+              </table> 
+        </div>
+    </div>
+    <footer>
+        <h4>© Copyright 2022 - NecoTech - Todos los derechos reservados</h4>
+        <h4>(11) 1234-5678</h4>
+    </footer>
+</body>
+
+</html>
