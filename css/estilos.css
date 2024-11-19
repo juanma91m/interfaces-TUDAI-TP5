@@ -35,7 +35,7 @@ nav {
     min-height: 50px;
     height: 50px;
     width:100%;
-    background-color: #ff1a1a;
+    background-color: #6ea4bf;
 }
 
 nav ul img {
@@ -44,7 +44,10 @@ nav ul img {
     cursor: pointer;
     display: none;
 }
-
+.itemNav{
+    background-color: white;
+    color:black;
+}
 .navegacion {
     display: flex;
     flex-direction: row;
