@@ -129,6 +129,77 @@ nav a {
     padding: 10px 5%;
     background-color: #e6e6e6;
 }
+.contenido-preinscripcion {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    background-color: #dfdede;
+    padding: 10px 5%;
+}
+.form-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 600px;
+}
+.form-container h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.form-container p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+.three-inputs input {
+    width: calc(33.333% - 10px);
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.three-inputs input:last-child {
+    margin-right: 0;
+}
+
+.two-inputs > div {
+    width: calc(50% - 10px);
+    display: inline-block;
+    vertical-align: top;
+}
 .carousel-container {
     display: flex;
     align-items: center;
@@ -278,7 +349,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 90px;
+    min-height: 90px;
     width: 100%;
     background-color: #0c0636;
     min-width: 420px;

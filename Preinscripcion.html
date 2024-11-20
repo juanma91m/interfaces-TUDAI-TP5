@@ -22,10 +22,10 @@
             <a href="index.html">
                 <li class="menu">Cursos Presenciales</li>
             </a>    
-            <a href="productos.html">
+            <a href="preinscripcion.html">
                 <li class="menuSelected">Preinscripcion</li>
             </a>
-            <a href="carrito.html">
+            <a href="nosotros.html">
                 <li class="menu">Nosotros</li>
             </a>
             <a href="contactate.html">
@@ -33,36 +33,86 @@
             </a>
         </ul>
     </nav>
-    <div class="contenido">
-        <div class="carousel-container">
-            <div class="arrow" id="prev-arrow">&#9664;</div>
-            <div class="carousel-track">
-                <a href="index.html" class="carousel-item">
-                    <h2>Programacion</h2>
-                    <p>Aqui va la descripcion del curso 1...</p>
-                    <p class="schedule">Lunes y Miercoles de 8:00 a 10:00</p>
-                </a>
-                <a href="index.html" class="carousel-item">
-                    <h2>Cocina Mexicana</h2>
-                    <p>Aqui va la descripcion del curso 2...</p>
-                    <p class="schedule">Lunes y Miercoles de 8:00 a 10:00</p>
-                </a>
-                <a href="index.html" class="carousel-item">
-                    <h2>Diseño Grafico</h2>
-                    <p>Aqui va la descripcion del curso 3...</p>
-                    <p class="schedule">Lunes y Miercoles de 8:00 a 10:00</p>
-
-                </a>
-                <a href="index.html" class="carousel-item">
-                    <h2>Curso de Tejer</h2>
-                    <p>Aqui va la descripcion del curso 4...</p>
-                    <p class="schedule">Lunes y Miercoles de 8:00 a 10:00</p>
-                </a>
-
+    <div class="contenido-preinscripcion">
+    <div class="form-container">
+        <h1>Formulario de Inscripción Curso</h1>
+        <p>Rellene cuidadosamente el formulario de inscripción</p>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre del alumno</label>
+                <div class="three-inputs">
+                    <input type="text" id="nombre" placeholder="Nombre">
+                    <input type="text" id="segundo-nombre" placeholder="Segundo Nombre">
+                    <input type="text" id="apellido" placeholder="Apellido">
+                </div>
             </div>
-            <div class="arrow" id="next-arrow">&#9654;</div>
-        </div>
+            <div class="form-group two-inputs">
+                <div>
+                    <label for="fecha-nacimiento">Fecha de nacimiento</label>
+                    <input type="date" id="fecha-nacimiento">
+                </div>
+                <div>
+                    <label for="genero">Género</label>
+                    <select id="genero">
+                        <option value="">Please Select</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion-calle" placeholder="Dirección de la calle">
+                <input type="text" id="direccion-linea-2" placeholder="Dirección de la calle Línea 2">
+                <div class="three-inputs">
+                    <input type="text" id="ciudad" placeholder="Ciudad">
+                    <input type="text" id="estado" placeholder="Estado / Provincia">
+                    <input type="text" id="codigo-postal" placeholder="Código Postal">
+                </div>
+            </div>
+            <div class="form-group two-inputs">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="ejemplo@ejemplo.com">
+                </div>
+                <div>
+                    <label for="telefono">Número de teléfono</label>
+                    <input type="tel" id="telefono" placeholder="(000) 000-0000">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>¿Ha recibido otros cursos anteriormente?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="cursos-previos" value="si"> Sí</label>
+                    <label><input type="radio" name="cursos-previos" value="no"> No</label>
+                </div>
+            </div>
+            <div class="form-group two-inputs">
+                <div>
+                    <label for="empresa">Empresa</label>
+                    <input type="text" id="empresa">
+                </div>
+                <div>
+                    <label for="cursos">Cursos</label>
+                    <select id="cursos">
+                        <option value="">Please Select</option>
+                        <option value="curso1">Curso 1</option>
+                        <option value="curso2">Curso 2</option>
+                        <option value="curso3">Curso 3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comentarios">Comentarios adicionales</label>
+                <textarea id="comentarios" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </div>
+        </form>
     </div>
+</div>
     <footer>        
         <div>
             <a><i class="fa-solid fa-location-dot"></i> Direccion</a>
@@ -77,7 +127,7 @@
             <a><i class="fa-solid fa-fax"></i> Fax</a>
         </div>
     </footer>
-    
+    </div>
 </body>
 
 </html>
