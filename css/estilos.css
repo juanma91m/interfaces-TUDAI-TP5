@@ -57,6 +57,24 @@ nav ul img {
     border-radius: 30px;
     border:2px solid black;
 }
+.menuSelected {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    padding: 20px 40px;
+    margin: 0px 20px;
+    background-color: #0c6785;
+    border-radius: 30px;
+    border:4px solid black;
+}
+
+.menuSelected:hover {
+    background-color: #095169;
+    border:4px solid black;
+    border-radius: 30px;
+}
 
 .menu:hover {
     background-color: #095169;
