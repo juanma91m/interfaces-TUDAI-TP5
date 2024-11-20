@@ -11,28 +11,17 @@ html {
     margin: 0;
 }
 
-header {
-    width:100%;
-    height: 90px;
-    color: red;
-    font-family: 'Lucida Sans';
-    background-image: linear-gradient(to right, white, #cccccc);
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.caja_logo {
-    height: 100%;
-    width: 10%;
-}
-
 .logo {
-    height: 100%;
-    width: 100%;
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-right: 100px;
 }
 
 nav {
+    display: flex;
+    flex-direction: row;
+    padding:10px;
     min-height: 75px;
     height: 75px;
     width:100%;
@@ -63,15 +52,15 @@ nav ul img {
     justify-content: center;
     height: 80%;
     padding: 20px 40px;
+    margin: 0px 20px;
     background-color: white;
     border-radius: 30px;
     border:2px solid black;
-    
 }
 
 .menu:hover {
     background-color: #095169;
-    border:2px solid black;
+    border: 2px solid black;
     border-radius: 30px;
 }
 
@@ -314,7 +303,14 @@ footer div{
     display: none;
 }
 
-@media only screen and (max-width: 800px),
+@media only screen and (max-width: 1050px),
+screen and (max-height: 600px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 850px),
 screen and (max-height: 600px) {
 
     nav {
