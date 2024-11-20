@@ -172,6 +172,7 @@ input, select, textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
+    margin-bottom: 10px;
     border-radius: 4px;
     font-size: 14px;
 }
@@ -180,7 +181,27 @@ input[type="radio"] {
     width: auto;
     margin-right: 5px;
 }
-
+.btn-enviar{
+    width: 100px;    
+    border-radius: 20px;
+    background:#095169;
+    border: 2px solid black;
+    color:white;
+    font-size: 15px;
+    padding: 3px;
+}
+.btn-enviar:hover{
+    width: 100px;    
+    border-radius: 20px;
+    background:#0c0636;
+    border: 2px solid black;
+    color:white;
+    font-size: 15px;
+    padding: 3px;
+}
+.div-button{
+    text-align: center;
+}
 textarea {
     resize: none;
 }
@@ -360,6 +381,10 @@ footer div{
     justify-content: space-evenly;
     align-items: center;
 }
+#empresa,#email,#fecha-nacimiento{
+    width:250px;
+}
+
 
 #captchaOrigen {
     color: darkblue;
