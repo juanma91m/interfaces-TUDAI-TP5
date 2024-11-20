@@ -18,7 +18,7 @@ html {
     margin-right: 100px;
 }
 
-nav {
+.navPrincipal {
     display: flex;
     flex-direction: row;
     padding:10px;
@@ -28,7 +28,7 @@ nav {
     background-color: #0c0636;
 }
 
-nav ul img {
+.navPrincipal ul img {
     width: 5%;
     height: 100%;
     cursor: pointer;
@@ -45,23 +45,27 @@ nav ul img {
     padding-right: 40px;
 }
 
+.navegacion a .menu{
+    height: 80%;
+    padding: 20px 40px;
+    margin: 0px 20px;
+    border-radius: 30px;
+    border:2px solid black;
+    background-color: white;
+}
 .menu {
     display: flex;
     cursor: pointer;
     align-items: center;
-    justify-content: center;
-    height: 80%;
-    padding: 20px 40px;
-    margin: 0px 20px;
-    background-color: white;
-    border-radius: 30px;
-    border:2px solid black;
+    justify-content: center;  
 }
 .menuSelected {
     display: flex;
     cursor: pointer;
     align-items: center;
-    justify-content: center;
+    justify-content: center;  
+}
+.navegacion a .menuSelected{
     height: 80%;
     padding: 20px 40px;
     margin: 0px 20px;
@@ -70,21 +74,66 @@ nav ul img {
     border:4px solid black;
 }
 
-.menuSelected:hover {
+.navegacion a .menuSelected:hover {
     background-color: #095169;
     border:4px solid black;
     border-radius: 30px;
 }
 
-.menu:hover {
+.navegacion a .menu:hover {
     background-color: #095169;
     border: 2px solid black;
     border-radius: 30px;
 }
-
-.menu.selected {
-    background-color: #cc0000;
+.navCursos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding:5px;
+    min-height: 40px;
+    height: 40px;
+    width:100%;
+    background-color: #dfdede;
 }
+.navegacionCursos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    margin: 0px;
+    padding-right: 40px;
+}
+
+.navegacionCursos a .menu{
+    height: 50%;
+    padding: 10px 20px;
+    margin: 0px 10px;
+    border-radius: 20px;
+    border:2px solid black;
+    background-color: white;
+}
+.navegacionCursos a .menu:hover {
+    background-color: #095169;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.navegacionCursos a .menuSelected{
+    height: 50%;
+    padding: 10px 20px;
+    margin: 0px 10px;
+    background-color: #0c6785;
+    border-radius: 20px;
+    border:2px solid black;
+}
+
+.navegacionCursos a .menuSelected:hover {
+    background-color: #095169;
+    border:2x solid black;
+    border-radius: 20px;
+}
+
 
 nav a {
     text-decoration: none;
@@ -427,7 +476,7 @@ screen and (max-height: 600px) {
 @media only screen and (max-width: 850px),
 screen and (max-height: 600px) {
 
-    nav {
+    .navPrincipal {
         position: fixed;
         width: 100%;
         min-height: 70px;
@@ -519,7 +568,7 @@ screen and (max-height: 600px) {
         height: 45%;
         margin-right: 10px
     }
-    nav ul a {
+    .navPrincipal ul a {
         padding-left: 0px;
         padding-right: 0px;
         margin-left: 0px;
