@@ -5,6 +5,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    font-family: 'Arial',sans-serif;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -32,10 +33,10 @@ header {
 }
 
 nav {
-    min-height: 50px;
-    height: 50px;
+    min-height: 75px;
+    height: 75px;
     width:100%;
-    background-color: #6ea4bf;
+    background-color: #0c0636;
 }
 
 nav ul img {
@@ -44,14 +45,11 @@ nav ul img {
     cursor: pointer;
     display: none;
 }
-.itemNav{
-    background-color: white;
-    color:black;
-}
+
 .navegacion {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    align-items: center;
     justify-content: space-evenly;
     height: 100%;
     margin: 0px;
@@ -63,21 +61,28 @@ nav ul img {
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    color: white;
-    padding: 0px 40px;
+    height: 80%;
+    padding: 20px 40px;
+    background-color: white;
+    border-radius: 30px;
+    border:2px solid black;
+    
 }
 
 .menu:hover {
-    background-color: #cc0000;
+    background-color: #095169;
+    border:2px solid black;
+    border-radius: 30px;
 }
 
 .menu.selected {
     background-color: #cc0000;
 }
 
-a {
+nav a {
     text-decoration: none;
+    font-size:larger;
+    font-weight: bold;
     color: black;
 }
 
@@ -116,6 +121,65 @@ a {
     width:100%;
     padding: 10px 5%;
     background-color: #e6e6e6;
+}
+.carousel-container {
+    display: flex;
+    align-items: center;
+    min-height: 80%;
+    width: 90%;
+    overflow: hidden;
+}
+.arrow {
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0 10px;
+    user-select: none;
+}
+.carousel-track {
+    display: flex;
+    width: 100%;
+    min-height: 95%;    
+    justify-content: space-evenly;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 10%;
+    max-width: 20%;
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    /*background-color: #53ba83;*/
+    background: linear-gradient(135deg, #53ba83, #2a9d55);
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.carousel-item:hover {
+    transform: translateY(-5px); /* Efecto al pasar el mouse */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más destacada */
+}
+
+.carousel-item h1 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.carousel-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 10px 0px;
+}
+
+.carousel-item .schedule {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 20px;
 }
 
 .publicidad {
@@ -204,14 +268,19 @@ h4 {
 
 footer {
     color: white;
-    font-family: 'Courier New';
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
     height: 90px;
     width: 100%;
-    background-color: #660000;
+    background-color: #0c0636;
     min-width: 420px;
+}
+footer div{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #captchaOrigen {
@@ -282,7 +351,7 @@ screen and (max-height: 600px) {
         margin-right: 40px;
         cursor: pointer;
     }
-
+    
     header {
         display: flex;
         min-width: 420px;
@@ -328,7 +397,7 @@ screen and (max-height: 600px) {
     }
 
     .contenido h2 {
-        font-size: 25px;
+        font-size: 15px;
     }
 
     .contenido ul {
