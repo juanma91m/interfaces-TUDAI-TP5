@@ -135,7 +135,7 @@ html {
 
 .login{
     height: 30px;
-    width: 70px;
+    width: 75px;
     border-radius: 20px;
     border:0px;
 }
@@ -201,6 +201,25 @@ nav a {
     width:100%;
     background-color: #dfdede;
     padding: 10px 5%;
+}
+.contenidoContacto {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    min-height: 500px;
+    width:100%;
+    background-color: #dfdede;
+    padding: 10px 5%;
+}
+.contacto{
+    display: flex;
+    background-image: url('../img/contacto.jpg');
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    color:white;
 }
 .contenidoCursos {
     box-sizing: border-box;
@@ -358,7 +377,7 @@ textarea {
     font-size: 1rem;
     line-height: 1.5;
     margin: 10px 0px;
-    text-align: left;
+    text-align: center;
     color: black;
 }
 
@@ -410,6 +429,44 @@ footer div{
 #check {
     display: none;
 }
+.adminIcons{
+    display:flex;
+    width: 30%;
+    justify-content: space-around;
+}
+.adminIcons i{
+    color:#0c0636;
+}
+.adminIconsCurso{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30%;
+    margin: 0px 5px;
+}
+#cantidad {
+    width: 96%;
+}
+
+#mensaje {
+    color: rgb(47, 55, 92);
+    font-weight: bold;
+}
+#empresa,#email,#fecha-nacimiento{
+    width:250px;
+}
+.arrow{
+    background-color: rgb(181, 181, 181);
+    border-radius: 30px;
+}
+#next-arrow{
+    padding-right: 5px;
+}
+#prev-arrow{
+    padding-left: 5px;
+}
+
+
 
 @media only screen and (max-width: 1050px),
 screen and (max-height: 600px) {

@@ -29,11 +29,11 @@
             <a href="">
                 <li class="menu">Nosotros</li>
             </a>
-            <a href="">
+            <a href="contacto.html">
                 <li class="menu">Contactate</li>
             </a>
         </ul>
-        <a href="PreinscripcionAdmin.html"><button class="login" >Login</button></a>
+        <a href="PreinscripcionAdmin.html"><button class="login" ><i class="fa-solid fa-right-to-bracket" style="padding-right:5px;"></i>Login</button></a>
     </nav>
     <div class="contenido-preinscripcion">
     <div class="form-container">
@@ -43,19 +43,19 @@
             <div class="form-group">
                 <label for="nombre">Nombre del alumno</label>
                 <div class="three-inputs">
-                    <input type="text" id="nombre" placeholder="Nombre" >
+                    <input type="text" id="nombre" placeholder="Nombre" required>
                     <input type="text" id="segundo-nombre" placeholder="Segundo Nombre">
-                    <input type="text" id="apellido" placeholder="Apellido">
+                    <input type="text" id="apellido" placeholder="Apellido" required>
                 </div>
             </div>
             <div class="form-group two-inputs">
                 <div>
                     <label for="fecha-nacimiento">Fecha de nacimiento</label>
-                    <input type="date" id="fecha-nacimiento">
+                    <input type="date" id="fecha-nacimiento" required>
                 </div>
                 <div>
                     <label for="genero">Género</label>
-                    <select id="genero">
+                    <select id="genero" required>
                         <option value="">Please Select</option>
                         <option value="masculino">Masculino</option>
                         <option value="femenino">Femenino</option>
@@ -65,18 +65,17 @@
             </div>
             <div class="form-group">
                 <label for="direccion">Dirección</label>
-                <input type="text" id="direccion-calle" placeholder="Dirección de la calle">
-                <input type="text" id="direccion-linea-2" placeholder="Dirección de la calle Línea 2">
+                <input type="text" id="direccion-calle" placeholder="Dirección de la calle" required>
                 <div class="three-inputs">
-                    <input type="text" id="ciudad" placeholder="Ciudad">
-                    <input type="text" id="estado" placeholder="Estado / Provincia">
-                    <input type="text" id="codigo-postal" placeholder="Código Postal">
+                    <input type="text" id="ciudad" placeholder="Ciudad" required>
+                    <input type="text" id="estado" placeholder="Estado / Provincia" required>
+                    <input type="text" id="codigo-postal" placeholder="Código Postal" required>
                 </div>
             </div>
             <div class="form-group two-inputs">
                 <div>
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="ejemplo@ejemplo.com">
+                    <input type="email" id="email" placeholder="ejemplo@ejemplo.com" required>
                 </div>
                 <div>
                     <label for="telefono">Número de teléfono</label>
@@ -97,7 +96,7 @@
                 </div>
                 <div>
                     <label for="cursos">Cursos</label>
-                    <select id="cursos">
+                    <select id="cursos" required>
                         <option value="">Please Select</option>
                         <option value="curso1">Curso 1</option>
                         <option value="curso2">Curso 2</option>
