@@ -134,6 +134,56 @@ html {
     border-radius: 20px;
 }
 
+.login{
+    height: 30px;
+    width: 70px;
+    border-radius: 20px;
+    border:0px;
+}
+.login:hover{
+    background-color: #095169;
+    border-radius: 20px;
+    border:0px;
+}
+.cursoItem{
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+    /*background-color: #095169;*/
+    background: linear-gradient(135deg, #53ba83, #2a9d55);
+    border-radius: 30px;
+    width: 50%;
+    margin-bottom: 25px;
+    height: 175px;
+}
+.cursoItem p,.cursoItem a, .cursoItem h2{
+    padding: 2px;
+}
+.cursoItemTexto h2{
+    color:darkslategray;
+    text-shadow: 2px 2px 4px grey;
+}
+.cursoItemTexto a{
+    display:block;
+    text-align: right;
+    font-weight: bold;
+    font-style: italic;
+    color:darkslategray;
+    width: 80%;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px grey;
+}
+.cursoItem img{
+    border-radius: 40px;
+    height: 125px;
+    min-width: 200px;
+    padding: 20px;
+    margin-right: 50px;
+}
+.cursoItemTexto{
+    text-align: left;
+    
+}
 
 nav a {
     text-decoration: none;
@@ -150,6 +200,16 @@ nav a {
     justify-content: center;
     align-items: center;
     height: 75.6%;
+    width:100%;
+    background-color: #dfdede;
+    padding: 10px 5%;
+}
+.contenidoCursos {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width:100%;
     background-color: #dfdede;
     padding: 10px 5%;
@@ -293,7 +353,7 @@ textarea {
 .carousel-item {
     display:flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     min-width: 10%;
     max-width: 20%;
@@ -313,21 +373,27 @@ textarea {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más destacada */
 }
 
-.carousel-item h1 {
-    font-size: 1.8rem;
+.carousel-item h2 {
+    padding-top: 20px;
+    font-size: 1.4rem;
     margin: 10px 0;
+    color:darkslategray;
+    text-shadow: 2px 2px 4px grey;
 }
 
 .carousel-item p {
     font-size: 1rem;
     line-height: 1.5;
     margin: 10px 0px;
+    color: black;
 }
 
 .carousel-item .schedule {
+    padding-bottom: 20px;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     margin-top: 20px;
+
 }
 
 .publicidad {
@@ -383,7 +449,7 @@ td {
 
 th {
     color: white;
-    background-color: #5d1212;
+    background-color: #32235c;
 }
 
 h4 {
@@ -410,7 +476,7 @@ h4 {
 }
 
 #mensaje {
-    color: red;
+    color: rgb(47, 55, 92);
     font-weight: bold;
 }
 
@@ -498,7 +564,7 @@ screen and (max-height: 600px) {
 
     #check:checked~.navegacion {
         left: 0; 
-        background-color: red;
+        background-color: #0c0636;
     }
 
     .checkbtn {
@@ -546,14 +612,7 @@ screen and (max-height: 600px) {
         display: none;
     }
 
-    .menu {
-        margin-left: 0px;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0px;
-        font-size: 20px;
-        font-weight: bold;
-    }
+    
 
     .contenido h2 {
         font-size: 15px;
