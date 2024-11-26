@@ -189,14 +189,18 @@ nav a {
 .contenidoContacto {
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: left;
     min-height: 500px;
     width:100%;
     background-color: #dfdede;
     padding: 10px 5%;
 }
+.contenidoContacto h2{
+    color:darkslategray;
+    text-shadow: 2px 2px 4px grey;
+}
+
 .contacto{
     display: flex;
     background-image: url('../img/contacto.jpg');
@@ -260,7 +264,7 @@ label {
     margin-bottom: 5px;
 }
 
-input, select, textarea {
+.form-container input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -268,7 +272,22 @@ input, select, textarea {
     border-radius: 4px;
     font-size: 14px;
 }
-
+.form-container select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.form-container textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
 input[type="radio"] {
     width: auto;
     margin-right: 5px;
@@ -485,6 +504,102 @@ footer div{
 .textoComentario{
     font-size: 14px;
 }
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo gris con opacidad */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: hidden; /* Oculto por defecto */
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .modal.visible {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .modal-content button {
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .modal-content button:hover {
+    background: #0056b3;
+  }
+
+  #loginForm input{
+    border-radius: 5px;
+  }
+  #loginForm h3{    
+    font-size: 1.3rem;    
+    color:darkslategray;
+    text-shadow: 2px 2px 4px grey;
+  }
+  .modal-content a{
+    margin-top:10px;
+  }
+  #consulta-cursos {
+    margin:30px;
+    padding: 20px;
+    width: 50%;
+    border-left:1px solid rgb(174, 174, 174);
+  }
+  
+  #consulta-cursos h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    
+  }
+  
+  #consulta-cursos form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  #consulta-cursos input,
+  #consulta-cursos textarea {
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  #consulta-cursos button:hover {
+    background-color: #0056b3;
+  }
+  
 @media only screen and (max-width: 1400px){
     .navegacion a .menu{
         margin:0px 5px;

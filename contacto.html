@@ -33,27 +33,61 @@
                 <li class="menuSelected">Contactate</li>
             </a>
         </ul>
-        <a href="contactoAdmin.html" id="loginA"><i class="fa-solid fa-right-to-bracket"></i></i></a>
+        <a href="#" id="loginA" title="Login"><i class="fa-solid fa-right-to-bracket"></i></a>
     </nav>
     
     <h2 class="contacto">Contacto</h2>
-    
-    <div class="contenidoContacto">        
-        <div>
-            <h2>Informes y Consultas</h2>
-            <div>
-                <a><i class="fa-brands fa-whatsapp"></i> 02262-439241</a>
-                <p>Lunes a viernes de 9 a 21hs, Sabados de 9 a 15hs</p>
-                <a><i class="fa-solid fa-envelope"></i> CFL403NECOCHEA@gmail.com</a>
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <form id="loginForm">
+                <h3>Iniciar sesión</h3>
+                <label for="username">Usuario</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <div style="display:flex;flex-direction: column;">
+                <a href="">¿Olvidaste tu contraseña?</a>
+                <a href="">¿No tenes cuenta? Registrate!</a>
             </div>
-        </div>
-        <div > 
-            <h2>Ser parte del Equipo</h2>
-            <div>
-                <p><i class="fa-brands fa-whatsapp"></i> 02262-449040</p>
-                <a><i class="fa-solid fa-envelope"></i> CFL403NECOCHEADOCENTES@gmail.com</a>
+        </div>  
+    </div>
+    <div class="contenidoContacto"> 
+        <div style="width: 50%;">
+            <div style="margin:75px 0px;">
+                <h2>Informes y Consultas</h2>
+                <div>
+                    <a><i class="fa-brands fa-whatsapp"></i> 02262-439241</a>
+                    <p>Lunes a viernes de 9 a 21hs, Sabados de 9 a 15hs</p>
+                    <a><i class="fa-solid fa-envelope"></i> CFL403NECOCHEA@gmail.com</a>
+                </div>
             </div>
-        </div>
+            <div > 
+                <h2>Ser parte del Equipo</h2>
+                <div>
+                    <p><i class="fa-brands fa-whatsapp"></i> 02262-449040</p>
+                    <a><i class="fa-solid fa-envelope"></i> CFL403NECOCHEADOCENTES@gmail.com</a>
+                </div>
+            </div>   
+        </div>              
+          
+        <section id="consulta-cursos">
+            <h2>Consulta por Cursos</h2>
+            <form action="#" method="POST" style="max-width: 450px; margin: auto;">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required style="width: 100%; padding: 10px; margin: 10px 0;">
+              
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Tu email" required style="width: 100%; padding: 10px; margin: 10px 0;">
+              
+              <label for="mensaje">Consulta:</label>
+              <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu consulta aquí" required style="width: 100%; padding: 10px; margin: 10px 0;"></textarea>
+              
+              <button type="submit" style="background-color: #007BFF; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Enviar</button>
+            </form>
+        </section>
+          
     </div>
     
 </div>
@@ -72,6 +106,7 @@
         </div>
     </footer>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
