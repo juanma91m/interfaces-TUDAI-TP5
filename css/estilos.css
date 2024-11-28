@@ -682,14 +682,18 @@ screen and (max-height: 600px) {
         padding-left: 0px;
         padding-right: 0px;
         flex-direction: column;
-        align-items: center;
+        justify-content: start;
         position: fixed;
-        width: 70%;
-        height: 80%;
+        width: 45%;
+        height: 100%;
         left: -100%;
         transition: all .9s;
     }
-
+    .navegacion a{
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
     #check:checked~.navegacion {
         left: 0; 
         background-color: #0c0636;
@@ -703,6 +707,12 @@ screen and (max-height: 600px) {
         line-height: 80px;
         margin-right: 40px;
         cursor: pointer;
+    }
+    .tituloComentario{
+        font-size:14px;
+    }
+    .textoComentario{
+        font-size:11px;
     }
 
     .contenido {
