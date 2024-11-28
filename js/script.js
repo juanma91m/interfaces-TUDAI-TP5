@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const password = document.getElementById("password").value;
   
       // Verifica las credenciales
-      if (username === "asd" && password === "asd") {
+      if (username === "usuario" && password === "contrasenia") {
         window.location.href = "IndexAdmin.html"; // Redirige a la página
       } else {
         alert("Usuario o contraseña incorrectos"); // Muestra un mensaje de error

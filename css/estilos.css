@@ -522,7 +522,8 @@ footer div{
   }
   
   .modal-content {
-    background: white;
+    background:#0c0636;
+    color:white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -547,7 +548,7 @@ footer div{
   
   .modal-content button {
     padding: 10px;
-    background: #007bff;
+    background-color:#073e51;
     color: white;
     border: none;
     border-radius: 5px;
@@ -555,19 +556,25 @@ footer div{
   }
   
   .modal-content button:hover {
-    background: #0056b3;
+    background: #0a556e;
   }
 
   #loginForm input{
-    border-radius: 5px;
+    border-radius: 4px;
+    margin-bottom: 5px;
   }
   #loginForm h3{    
-    font-size: 1.3rem;    
-    color:darkslategray;
+    font-size: 1.4rem;    
     text-shadow: 2px 2px 4px grey;
+    padding: 5px;
+    margin:5px;
+
   }
+
   .modal-content a{
     margin-top:10px;
+    font-size: 13px;
+    color:white;
   }
   #consulta-cursos {
     margin:30px;
