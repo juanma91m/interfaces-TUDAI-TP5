@@ -30,5 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Usuario o contraseña incorrectos"); // Muestra un mensaje de error
       }
     });
+    
   });
   

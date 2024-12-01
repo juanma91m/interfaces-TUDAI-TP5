@@ -189,12 +189,13 @@ nav a {
 .contenidoContacto {
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: left;
     min-height: 500px;
     width:100%;
     background-color: #dfdede;
     padding: 10px 5%;
+    
 }
 .contenidoContacto h2{
     color:darkslategray;
@@ -266,7 +267,8 @@ label {
 
 .form-container input {
     width: 100%;
-    padding: 10px;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
     border: 1px solid #ccc;
     margin-bottom: 10px;
     border-radius: 4px;
@@ -315,10 +317,11 @@ input[type="radio"] {
 }
 textarea {
     resize: none;
+    font-family: 'Arial',sans-serif;
 }
 
 .three-inputs input {
-    width: calc(33.333% - 10px);
+    width: calc(33.333% - 13px);
     display: inline-block;
     margin-right: 15px;
 }
@@ -328,7 +331,7 @@ textarea {
 }
 
 .two-inputs > div {
-    width: calc(50% - 10px);
+    width: calc(50% - 3px);
     display: inline-block;
     vertical-align: top;
 }
@@ -421,7 +424,9 @@ textarea {
     height: 100%;
     width: 100%;
 }
-
+form, input, textarea, select, label, option, div, a,i {
+    font-family: 'Arial',sans-serif;
+}
 footer {
     color: white;
     display: flex;
@@ -467,7 +472,6 @@ footer div{
 
 #mensaje {
     color: rgb(47, 55, 92);
-    font-weight: bold;
 }
 #empresa,#email,#fecha-nacimiento{
     width:250px;
@@ -527,7 +531,7 @@ footer div{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    text-align: left;
   }
   
   .hidden {
@@ -563,12 +567,12 @@ footer div{
     border-radius: 4px;
     margin-bottom: 5px;
   }
+
   #loginForm h3{    
     font-size: 1.4rem;    
     text-shadow: 2px 2px 4px grey;
-    padding: 5px;
-    margin:5px;
-
+    padding: 10px 0px 20px 0px;
+    margin:0px;
   }
 
   .modal-content a{
@@ -577,7 +581,7 @@ footer div{
     color:white;
   }
   #consulta-cursos {
-    margin:30px;
+    margin:0px;
     padding: 20px;
     width: 50%;
     border-left:1px solid rgb(174, 174, 174);
@@ -606,7 +610,89 @@ footer div{
   #consulta-cursos button:hover {
     background-color: #0056b3;
   }
-  
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contenidoNosotros {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    background-color: #f9f9f9; /* Fondo suave para diferenciar la sección */
+}
+
+.seccionNosotros {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.seccionNosotros h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color:darkslategray;
+    text-shadow: 2px 2px 4px grey;
+    text-transform: uppercase;
+    
+}
+
+.seccionNosotros p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.imagenesNosotros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.imagenItem {
+    width: 50%; /* Tres imágenes por fila en pantallas grandes */
+    /*max-width: 300px;*/
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagenItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.imagenItem img {
+    width: 100%;
+    height: auto;
+}
+
+.imagenItem p {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
 @media only screen and (max-width: 1400px){
     .navegacion a .menu{
         margin:0px 5px;

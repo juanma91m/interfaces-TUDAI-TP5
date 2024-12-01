@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
     <nav class="navPrincipal">
         <input type="checkbox" id="check" />
         <label for="check" class="checkbtn">
@@ -27,16 +26,14 @@
                 <li class="menu">Preinscripcion</li>
             </a>
             <a href="nosotros.html">
-                <li class="menu">Nosotros</li>
+                <li class="menuSelected">Nosotros</li>
             </a>
             <a href="contacto.html">
-                <li class="menuSelected">Contacto</li>
+                <li class="menu">Contacto</li>
             </a>
-        </ul>
+        </ul>      
         <a href="#" id="loginA" title="Login" style="display:flex; align-items: center;"><i class="fa-solid fa-right-to-bracket"></i></a>
     </nav>
-    
-    <h2 class="contacto">Contacto</h2>
     <div id="modal" class="modal hidden">
         <div class="modal-content">
             <form id="loginForm">
@@ -53,46 +50,36 @@
             </div>
         </div>  
     </div>
-    <div class="contenidoContacto"> 
-        <div style="width: 50%; display:flex;align-items: center;flex-direction: column; justify-content:space-evenly;">
-            <div>
-                <h2>Informes y Consultas</h2>
-                <div>
-                    <a><i class="fa-brands fa-whatsapp"></i> 02262-439241</a>
-                    <p>Lunes a viernes de 9 a 21hs, Sabados de 9 a 15hs</p>
-                    <a><i class="fa-solid fa-envelope"></i> cfl403necochea@gmail.com</a>
+    <div class="contenidoNosotros">
+        <section class="seccionNosotros">
+            <h2>Conoce Quiénes Somos</h2>
+            <p>Nuestra misión es impulsar tu aprendizaje</p> 
+    
+            <div class="imagenesNosotros">
+                <div class="imagenItem">
+                    <img src="img/apicultura.jpg" alt="Apicultura">
+                    <p>Apicultura</p>
+                </div>
+                <div class="imagenItem">
+                    <img src="img/cocina.jpg" alt="Cocina">
+                    <p>Cocina</p>
+                </div>
+                <div class="imagenItem">
+                    <img src="img/huerta.jpg" alt="Huerta">
+                    <p>Huerta</p>
+                </div>
+                <div class="imagenItem">
+                    <img src="img/ayuda.jpg" alt="Cuidado Adulto">
+                    <p>Cuidado Adulto</p>
+                </div>
+                <div class="imagenItem">
+                    <img src="img/computacion.jpg" alt="Pensamiento Computacional">
+                    <p>Pensamiento Computacional</p>
                 </div>
             </div>
-            <div > 
-                <h2>Ser parte del Equipo</h2>
-                <div>
-                    <p><i class="fa-brands fa-whatsapp"></i> 02262-449040</p>
-                    <p>Lunes a viernes de 9 a 21hs, Sabados de 9 a 15hs</p>
-                    <a><i class="fa-solid fa-envelope"></i> cfl403necochea@gmail.com</a>
-                </div>
-            </div>   
-        </div>              
-          
-        <section id="consulta-cursos">
-            <h2>Consulta por Cursos</h2>
-            <form action="#" method="POST" style="max-width: 450px; margin: auto;">
-              <label for="nombre">Nombre:</label>
-              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required style="width: 100%; padding: 10px; margin: 10px 0;">
-              
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" placeholder="Tu email" required style="width: 100%; padding: 10px; margin: 10px 0;">
-              
-              <label for="mensaje">Consulta:</label>
-              <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu consulta aquí" required style="width: 100%; padding: 10px; margin: 10px 0;"></textarea>
-              <div class="div-button">
-                <button type="submit" class="btn-enviar">Enviar</button>
-              </div>
-              </form>
         </section>
-          
     </div>
     
-</div>
     <footer>        
         <div>
             <a><i class="fa-solid fa-location-dot"></i> Jesuita Cardiel y calle 50 S/N - Necochea</a>
@@ -107,7 +94,6 @@
             <a><i class="fa-solid fa-fax"></i> Fax</a>
         </div>
     </footer>
-    </div>
     <script src="js/script.js"></script>
 </body>
 
